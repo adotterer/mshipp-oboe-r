@@ -1,0 +1,36 @@
+#div__bio_container {
+    display: flex;
+    margin: 0 5em;
+    height: 100%;
+  }
+  
+  #div__profilepic {
+    flex: 1 1 70em;
+    margin-top: 1.4em;
+    height: 100%;
+    width: fit-content;
+    vertical-align: middle;
+  }
+  
+  #article__bio {
+    text-align: justify;
+    /* width: 100%; */
+    /* padding: 0.8rem; */
+  }
+  img {
+    width: 80%;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #div__profilepic {
+      display: none;
+    }
+    #div__bio_container {
+      margin: 0 0.2em;
+    }
+  
+    #article__bio {
+      padding: 0.35em;
+    }
+  }
+  
