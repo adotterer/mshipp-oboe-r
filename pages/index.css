@@ -1,7 +1,12 @@
 @import "./styles/bio.css";
 @import "./styles/navbar.css";
+@import "./styles/contact.css";
 @import url("https://use.typekit.net/gau7dsu.css");
 
 body {
     background-color: white;
+}
+
+a:visited, a:active {
+    color: unset;
 }

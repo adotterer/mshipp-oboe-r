@@ -9,20 +9,25 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
+            <Link href="/contact" exact={true} activeClassName="active">
+              Contact
+            </Link>
+          </li>
+          {/* <li>
             <Link href="/gallery" exact={true} activeClassName="active">
               Gallery
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/audio" exact={true} activeClassName="active">
               Audio
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/video" exact={true} activeClassName="active">
               Video
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     );

@@ -1,7 +1,7 @@
 
 export default function Bio() {
   return (
-    <div id="div__bio_container">
+    <div id="div__bio_container" class="container">
       <article id="article__bio">
         <h2>Oboe & English Horn</h2>
         <p>
