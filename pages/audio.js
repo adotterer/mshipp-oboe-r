@@ -1,51 +1,71 @@
-import { useState, useRef } from 'react';
+// import { useState, useRef } from 'react';
+import AudioPlayer from "../components/AudioPlayer";
 
-const AudioPlayer = ({ audioFiles }) => {
-  const [selectedAudio, setSelectedAudio] = useState(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef(null);
+const Audio = () => {
+  const audioBP = [
+    {
+      URL: "https://mshippoboe.s3.us-west-1.amazonaws.com/audio_5_Coleman.wav",
+      composer: "Valerie Coleman",
+      id: 1,
+      performers: "Philadelphia Orchestra",
+      title: "UMOJA Anthem of Unity for orchestra (2nd oboe solo)",
+    },
+    {
+      URL: "https://mshippoboe.s3.us-west-1.amazonaws.com/audio_7_van.wav",
+      composer: "Ludwig van Beethoven",
+      id: 2,
+      performers: "Temple Symphony Orchestra",
+      title: "Symphony No. 5, I. Allegro con brio",
+    },
+    {
+      URL: "https://mshippoboe.s3.us-west-1.amazonaws.com/audio_8_van.wav",
+      composer: "Ludwig van Beethoven",
+      id: 3,
+      performers: "Temple Symphony Orchestra",
+      title: "Symphony No. 5, II. Andante con moto",
+    },
+    {
+      URL: "https://mshippoboe.s3.us-west-1.amazonaws.com/audio_4_Hindemith.wav",
+      composer: "Paul Hindemith",
+      id: 4,
+      performers: "Temple Symphony Orchestra",
+      title: "Symphonic Metamorphosis of Themes by Carl Maria von Weber",
+    },
+    {
+      URL: "https://mshippoboe.s3.us-west-1.amazonaws.com/audio_20_Milhaud.wav",
+      composer: "Darius Milhaud",
+      id: 5,
+      performers: "Temple Symphony Orchestra",
+      title: "La création du monde",
+    },
 
-  const handleAudioSelection = (audio) => {
-    setSelectedAudio(audio);
-    setIsPlaying(true);
-  };
+    //https://mshippoboe.s3.us-west-1.amazonaws.com/audio_5_Coleman.wav
+  ];
+  // console.log(audioBP, "audioBP")
+  // const handleAudioSelection = (audio) => {
+  //   setSelectedAudio(audio);
+  //   setIsPlaying(true);
+  // };
 
-  const handleTogglePlay = () => {
-    if (isPlaying) {
-      audioRef.current.pause();
-    } else {
-      audioRef.current.play();
-    }
-    setIsPlaying(!isPlaying);
-  };
+  // const handleTogglePlay = () => {
+  //   if (isPlaying) {
+  //     audioRef.current.pause();
+  //   } else {
+  //     audioRef.current.play();
+  //   }
+  //   setIsPlaying(!isPlaying);
+  // };
 
-  const handleRewind = () => {
-    audioRef.current.currentTime = 0;
-    audioRef.current.play();
-  };
+  // const handleRewind = () => {
+  //   audioRef.current.currentTime = 0;
+  //   audioRef.current.play();
+  // };
 
   return (
-    <div class="container center" id="div__bio_container">
-      <h2>Coming soon!</h2>
-      
-      {/* <div>
-        {audioFiles.map((audio) => (
-          <button key={audio} onClick={() => handleAudioSelection(audio)}>
-            {audio}
-          </button>
-        ))}
-      </div>
-      {selectedAudio && (
-        <div>
-          <audio ref={audioRef} src={selectedAudio} />
-          <button onClick={handleTogglePlay}>
-            {isPlaying ? 'Pause' : 'Play'}
-          </button>
-          <button onClick={handleRewind}>Rewind</button>
-        </div>
-      )} */}
+    <div className="container" id="audio_container">
+      <AudioPlayer tracklists={audioBP} />
     </div>
   );
 };
 
-export default AudioPlayer;
+export default Audio;

@@ -31,7 +31,7 @@ export default function Contact() {
         <div>mshipp08@gmail.com</div>
       </div>
       <div className="contact-icons">
-        <div class="instagram-logo">
+        <div className="instagram-logo">
           <a href="https://www.instagram.com/matthewshippoboe/">
             <AiOutlineInstagram />
           </a>

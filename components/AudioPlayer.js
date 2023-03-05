@@ -1,4 +1,9 @@
-export default function AudioPlayer() {
+import { useState } from "react";
+
+export default function AudioPlayer({ tracklists }) {
+  const [selectedAudio, setSelectedAudio] = useState(null)
+  // const selectedAudio = tracklists[0];
+  // console.log("tracklists", tracklists)
   return (
     <div className="list__and__player">
       <ul className="track__list">

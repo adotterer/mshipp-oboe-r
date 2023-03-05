@@ -1,0 +1,197 @@
+#audio_container {
+    display: block;
+}
+
+.list__and__player {
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid chartreuse; */
+  }
+  .track__list {
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+  }
+  .track__list li {
+    position: relative;
+    list-style-type: none;
+    background-color: rgb(247, 247, 247);
+    padding: 0.5em;
+    border: 1px solid rgb(255, 255, 255);
+    transition: border 0.1s linear;
+    cursor: pointer;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    height: fit-content;
+  }
+  
+  .track__list li:hover {
+    border-bottom: 1px solid rgb(95, 95, 95);
+  }
+  
+  .track__list li figcaption {
+    font-size: 0.9em;
+  }
+  .audio__grid {
+    flex: 1 3 30%;
+    padding: 1em;
+    background-color: rgb(235, 235, 235);
+    border: 1px solid rgb(46, 46, 46);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: min-content;
+  }
+  
+  .delete__icon {
+    position: absolute;
+    right: -0.55em;
+    top: -0.5em;
+    border: 1px solid rgb(228, 199, 199);
+    background-color: rgb(255, 190, 190);
+    border-radius: 50%;
+    font-size: 2em;
+    width: 3.4rem;
+    height: 3.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .delete__icon:hover i {
+    cursor: crosshair;
+  }
+  
+  .delete__icon:hover {
+    border: 1px solid rgb(238, 36, 0);
+  }
+  @media screen and (max-width: 900px) {
+    .track__list li {
+      font-size: 0.95em;
+    }
+  
+    .track__list li figcaption {
+      font-size: 0.75em;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .list__and__player {
+      flex-direction: column;
+    }
+    .track__list {
+      padding: 0.2em;
+      max-height: 43vh;
+      overflow-y: scroll;
+      /* border: 2px solid rebeccapurple; */
+    }
+    form.form__upload {
+      display: none;
+    }
+    figure.audio__grid {
+      border: 2px solid rgb(201, 201, 201);
+      position: fixed;
+      bottom: 1em;
+      left: 2vw;
+      right: 2vw;
+      margin: 0;
+    }
+  }
+  
+  #audio__grid:hover {
+    border: 1px solid #000000;
+  }
+  
+  #audio__grid:hover .black__bg {
+    background-color: rgb(46, 46, 46);
+    color: rgb(255, 255, 255);
+  }
+  
+  #audio__grid audio,
+  #audio__grid figcaption {
+    padding: 10px;
+  }
+  
+  .composer {
+    font-size: 0.7em;
+  }
+  
+  .audio__player {
+    grid-row-start: 2;
+    padding: 6px 0;
+  }
+  
+  .audio__title_composer {
+    grid-row-start: 1;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .audio__performers {
+    font-weight: 200;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+  
+  .black__bg {
+    background-color: rgb(46, 46, 46);
+    padding: 3px;
+    margin-bottom: 3px;
+    color: rgb(223, 223, 223);
+    border-radius: 5px;
+  }
+  
+  .form__upload {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 5em;
+  }
+  
+  .form__upload label {
+    float: left;
+    text-align: left;
+  
+    line-height: 1.5em;
+    font-size: 1.3em;
+    margin: 0.2em;
+    width: 20%;
+  }
+  
+  .form__upload label + input {
+    float: right;
+    width: 50%;
+    line-height: 1.5em;
+    font-size: 1.1em;
+    margin: 0.2em;
+    padding: 0.35em;
+    border: 0;
+    border-bottom: 0.1em solid rgb(156, 156, 156);
+  }
+  
+  .form__upload label + input + br {
+    clear: both;
+  }
+  .form__upload label + input:focus,
+  .form__upload label + input:active {
+    outline: none;
+    background-color: rgba(177, 177, 177, 0.2);
+  }
+  
+  .form__upload input[type="file"] {
+    padding: 5px;
+  }
+  
+  .form__fields {
+    flex: 1 0 70%;
+    text-align: center;
+  }
+  
+  .form__fields button {
+    width: 7em;
+    font-size: 1.2em;
+    margin: 0 auto;
+  }
+  .audio_preview {
+    flex: 1 1 30%;
+  }
