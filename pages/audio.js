@@ -1,4 +1,3 @@
-// import { useState, useRef } from 'react';
 import AudioPlayer from "../components/AudioPlayer";
 
 const Audio = () => {
@@ -38,28 +37,8 @@ const Audio = () => {
       performers: "Temple Symphony Orchestra",
       title: "La création du monde",
     },
-
-    //https://mshippoboe.s3.us-west-1.amazonaws.com/audio_5_Coleman.wav
   ];
-  // console.log(audioBP, "audioBP")
-  // const handleAudioSelection = (audio) => {
-  //   setSelectedAudio(audio);
-  //   setIsPlaying(true);
-  // };
 
-  // const handleTogglePlay = () => {
-  //   if (isPlaying) {
-  //     audioRef.current.pause();
-  //   } else {
-  //     audioRef.current.play();
-  //   }
-  //   setIsPlaying(!isPlaying);
-  // };
-
-  // const handleRewind = () => {
-  //   audioRef.current.currentTime = 0;
-  //   audioRef.current.play();
-  // };
 
   return (
     <div className="container" id="audio_container">

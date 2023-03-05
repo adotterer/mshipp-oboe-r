@@ -8,8 +8,8 @@ export default function Bio() {
           Matthew Shipp lives in Philadelphia and works as a freelance oboist in
           Philadelphia and New York City. Mr. Shipp has performed with The
           Philadelphia Orchestra, Pennsylvania Ballet Orchestra, Chamber
-          Orchestra of Philadelphia, Princeton Symphony, Brooklyn Chamber
-          Orchestra, and Symphony in C. As a guest musician, Mr. Shipp has
+          Orchestra of Philadelphia, Reading Symphony, Princeton Symphony, Brooklyn
+          Chamber Orchestra, and Symphony in C. As a guest musician, Mr. Shipp has
           performed with The Philadelphia Orchestra both domestically and
           internationally in Taiwan, Japan, and South Korea. Recent engagements
           include performances at Carnegie Hall, Suntory Hall, NHK Hall, Seoul
