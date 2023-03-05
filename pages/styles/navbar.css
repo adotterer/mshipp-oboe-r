@@ -5,7 +5,9 @@ nav {
 nav ul {
   display: flex;
   justify-content: center;
+  margin-bottom: 1.5rem;
 }
+
 nav li {
     display: inline-block;
     font-family: mr-eaves-sans, sans-serif;

@@ -9,13 +9,11 @@
   }
   .track__list {
     flex: 1 1 60%;
-    padding: 1em;
     display: flex;
     flex-direction: column;
   }
   .track__list li {
     position: relative;
-    width: 100%;
     list-style-type: none;
     background-color: rgb(247, 247, 247);
     padding: 0.5em;
@@ -83,17 +81,15 @@
       flex-direction: column;
     }
     .track__list {
-      /* width: 40%; */
-      flex: 1 1 10vw;
       padding: 0.2em;
-      width: 95vw;
-      /* border: 5px solid red; */
+      max-height: 43vh;
+      overflow-y: scroll;
+      /* border: 2px solid rebeccapurple; */
     }
     form.form__upload {
       display: none;
     }
     figure.audio__grid {
-      width: 96vw;
       border: 2px solid rgb(201, 201, 201);
       position: fixed;
       bottom: 1em;
@@ -189,8 +185,6 @@
   .form__fields {
     flex: 1 0 70%;
     text-align: center;
-    /* display: inline-flex;
-    flex-direction: column; */
   }
   
   .form__fields button {

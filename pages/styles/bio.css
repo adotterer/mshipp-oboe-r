@@ -1,17 +1,7 @@
 /* #div__bio_container {
 
   } */
-  .center {
-    text-align: center;
-    justify-content: center;
-  }
 
-
-  .container {
-    display: flex;
-    margin: 0 5em;
-    height: 100%;
-  }
   
   #div__profilepic {
     flex: 1 1 70em;

@@ -1,6 +1,9 @@
-export default function AudioPlayer({tracklists}) {
+import { useState } from "react";
+
+export default function AudioPlayer({ tracklists }) {
+  const [selectedAudio, setSelectedAudio] = useState(null)
   // const selectedAudio = tracklists[0];
-  console.log("tracklists", tracklists)
+  // console.log("tracklists", tracklists)
   return (
     <div className="list__and__player">
       <ul className="track__list">
@@ -18,8 +21,7 @@ export default function AudioPlayer({tracklists}) {
           })}
       </ul>
 
-
-      {/* {selectedAudio && (
+      {selectedAudio && (
         <figure className="audio__grid">
           <figcaption className="audio__title_composer">
             <span className="black__bg">{selectedAudio.title}</span>
@@ -36,7 +38,7 @@ export default function AudioPlayer({tracklists}) {
             <span className="black__bg">{selectedAudio.performers}</span>
           </figcaption>
         </figure>
-      )} */}
+      )}
     </div>
   );
 }

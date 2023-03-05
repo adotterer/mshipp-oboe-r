@@ -5,9 +5,36 @@
 @import url("https://use.typekit.net/gau7dsu.css");
 
 body {
-    background-color: white;
+  background-color: white;
 }
 
-a:visited, a:active {
-    color: unset;
+a:visited,
+a:active {
+  color: unset;
+}
+
+ul {
+  list-style-type: unset;
+  margin-block-start: unset;
+  margin-block-end: unset;
+  margin-inline-start: unset;
+  margin-inline-end: unset;
+  padding-inline-start: unset;
+}
+
+.center {
+  text-align: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  margin: 0 5em;
+  height: 100%;
+}
+
+@media screen and (max-width: 551px) {
+  .container {
+    margin: unset;
+  }
 }

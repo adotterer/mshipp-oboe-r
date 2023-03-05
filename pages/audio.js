@@ -1,19 +1,47 @@
-import { useState, useRef } from 'react';
-import AudioPlayer from "../components/AudioPlayer"
-
+// import { useState, useRef } from 'react';
+import AudioPlayer from "../components/AudioPlayer";
 
 const Audio = () => {
-  const [selectedAudio, setSelectedAudio] = useState(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef(null);
-  const audioBP = [{
-    URL: "https://mshippoboe.s3.us-west-1.amazonaws.com/audio_19_Brahms.wav",
-    composer: "Johannes Brahms",
-    id: 19,
-    performers: "Andrew Dotterer, oboe",
-    title: "12AM CF",
-  }];
-  console.log(audioBP, "audioBP")
+  const audioBP = [
+    {
+      URL: "https://mshippoboe.s3.us-west-1.amazonaws.com/audio_5_Coleman.wav",
+      composer: "Valerie Coleman",
+      id: 1,
+      performers: "Philadelphia Orchestra",
+      title: "UMOJA Anthem of Unity for orchestra (2nd oboe solo)",
+    },
+    {
+      URL: "https://mshippoboe.s3.us-west-1.amazonaws.com/audio_7_van.wav",
+      composer: "Ludwig van Beethoven",
+      id: 2,
+      performers: "Temple Symphony Orchestra",
+      title: "Symphony No. 5, I. Allegro con brio",
+    },
+    {
+      URL: "https://mshippoboe.s3.us-west-1.amazonaws.com/audio_8_van.wav",
+      composer: "Ludwig van Beethoven",
+      id: 3,
+      performers: "Temple Symphony Orchestra",
+      title: "Symphony No. 5, II. Andante con moto",
+    },
+    {
+      URL: "https://mshippoboe.s3.us-west-1.amazonaws.com/audio_4_Hindemith.wav",
+      composer: "Paul Hindemith",
+      id: 4,
+      performers: "Temple Symphony Orchestra",
+      title: "Symphonic Metamorphosis of Themes by Carl Maria von Weber",
+    },
+    {
+      URL: "https://mshippoboe.s3.us-west-1.amazonaws.com/audio_20_Milhaud.wav",
+      composer: "Darius Milhaud",
+      id: 5,
+      performers: "Temple Symphony Orchestra",
+      title: "La création du monde",
+    },
+
+    //https://mshippoboe.s3.us-west-1.amazonaws.com/audio_5_Coleman.wav
+  ];
+  // console.log(audioBP, "audioBP")
   // const handleAudioSelection = (audio) => {
   //   setSelectedAudio(audio);
   //   setIsPlaying(true);
@@ -33,28 +61,9 @@ const Audio = () => {
   //   audioRef.current.play();
   // };
 
-
   return (
-    <div className="container center" id="audio_container">
-      <h2>Coming soon!</h2>
+    <div className="container" id="audio_container">
       <AudioPlayer tracklists={audioBP} />
-      
-      {/* <div>
-        {audioFiles.map((audio) => (
-          <button key={audio} onClick={() => handleAudioSelection(audio)}>
-            {audio}
-          </button>
-        ))}
-      </div>
-      {selectedAudio && (
-        <div>
-          <audio ref={audioRef} src={selectedAudio} />
-          <button onClick={handleTogglePlay}>
-            {isPlaying ? 'Pause' : 'Play'}
-          </button>
-          <button onClick={handleRewind}>Rewind</button>
-        </div>
-      )} */}
     </div>
   );
 };
