@@ -1,4 +1,6 @@
-export default function AudioPlayer() {
+export default function AudioPlayer({tracklists}) {
+  // const selectedAudio = tracklists[0];
+  console.log("tracklists", tracklists)
   return (
     <div className="list__and__player">
       <ul className="track__list">
@@ -16,7 +18,8 @@ export default function AudioPlayer() {
           })}
       </ul>
 
-      {selectedAudio && (
+
+      {/* {selectedAudio && (
         <figure className="audio__grid">
           <figcaption className="audio__title_composer">
             <span className="black__bg">{selectedAudio.title}</span>
@@ -33,7 +36,7 @@ export default function AudioPlayer() {
             <span className="black__bg">{selectedAudio.performers}</span>
           </figcaption>
         </figure>
-      )}
+      )} */}
     </div>
   );
 }
