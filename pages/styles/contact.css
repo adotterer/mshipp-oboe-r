@@ -1,25 +1,32 @@
 .contact-icons {
-    display: flex; 
-    /* width: 100%; */
-    justify-content: center;
-    font-size: 1.2em;
-    gap: 1rem;
-    cursor: pointer;
-  }
-  .contact-icons:hover {
-    color: #dcc333;
-  }
+  display: flex;
+  /* width: 100%; */
+  justify-content: center;
+  font-size: 1.2em;
+  gap: 1rem;
+  cursor: pointer;
+}
+.contact-icons:hover {
+  color: #dcc333;
+}
 
-  #contact-page {
-    margin-top: 100px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    /* border: 1px solid pink; */
-    flex-direction: column;
-    gap: 2em;
-  }
+#contact-page {
+  margin-top: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid pink; */
+  flex-direction: column;
+  gap: 2em;
+}
 
-  .instagram-logo {
-    font-size: 3rem;
-  }
+.instagram-logo {
+  font-size: 3rem;
+}
+
+.copied-to-clipboard {
+  margin-top: 10px;
+  font-size: 1.1em;
+  transition: all linear 0.5s;
+  color: rgb(21, 107, 55);
+}

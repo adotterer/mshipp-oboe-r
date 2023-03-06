@@ -5,16 +5,30 @@
 @import "./styles/video.css";
 @import "./styles/gallery.css";
 @import url("https://use.typekit.net/gau7dsu.css");
+@import url("https://use.typekit.net/gau7dsu.css");
+
 
 body {
   background-color: white;
   color: black;
+
+}
+
+.hidden {
+    opacity: 0;
+    /* color: white; */
 }
 
 a,
 a:visited,
 a:active {
   color: unset;
+}
+h1, h2, h3, h4, h5 {
+
+}
+p {
+
 }
 
 ul {
