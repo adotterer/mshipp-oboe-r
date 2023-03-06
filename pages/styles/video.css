@@ -34,6 +34,10 @@
   width: 560px;
   height: 315px;
 }
+#preload-videos {
+    border: 1px solid red;
+    display: none;
+}
 
 @media screen and (max-width: 800px) {
   #video_container {
