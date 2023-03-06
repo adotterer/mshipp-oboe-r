@@ -23,11 +23,11 @@ const NavBar = () => {
               Audio
             </Link>
           </li>
-          {/* <li>
+          <li>
             <Link href="/video" exact={true}>
               Video
             </Link>
-          </li> */}
+          </li>
         </ul>
       </nav>
     );
