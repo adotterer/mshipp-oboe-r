@@ -23,6 +23,11 @@ const NavBar = () => {
               Video
             </Link>
           </li>
+          <li>
+            <Link href="/gallery" exact>
+              Gallery
+            </Link>
+          </li>
         </ul>
       </nav>
     );
