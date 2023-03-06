@@ -41,7 +41,7 @@ const videoBP = [
     performers: `Philadelphia Orchestra`,
     conductor: "Yannick Nézet-Séguin",
     soloist: "Haochen Zhang, piano",
-    title: "Rachmaninov Piano Concerto No. 2 in C minor Op. 18",
+    title: "Piano Concerto No. 2 in C minor Op. 18",
   },
 
   //https://mshippoboe.s3.us-west-1.amazonaws.com/rach-clip-imovie.mp4
