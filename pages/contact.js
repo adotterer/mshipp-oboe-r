@@ -1,6 +1,7 @@
 import { AiFillMail, AiOutlineInstagram } from "react-icons/ai";
 import { HiOutlineMusicalNote } from "react-icons/hi2";
 import { useEffect, useState } from "react";
+import Head from 'next/head';
 
 export default function Contact() {
   const [emailClicked, setEmailClicked] = useState(false);
@@ -16,7 +17,9 @@ export default function Contact() {
 
   return (
     <div id="contact-page" className="container center">
-      <title>Matthew Shipp | Oboe | Contact</title>
+      <Head>
+        <title>Matthew Shipp | Oboe | Contact</title>
+      </Head>
       <div
         // className="contact-icons"
         onClick={() => copyToClipboard("mshipp08@gmail.com")}

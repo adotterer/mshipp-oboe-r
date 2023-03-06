@@ -1,5 +1,5 @@
-import { useState, useEffect, useRef } from "react";
-// import AudioPlayer from "../components/AudioPlayer";
+import { useState } from "react";
+import Head from "next/head";
 
 const videoBP = [
   {
@@ -53,17 +53,15 @@ const videoBP = [
     hall: "Rock Hall, Philadelphia",
     title: "The Serenade No. 10 `Gran Partita`",
   },
-
-  //https://mshippoboe.s3.us-west-1.amazonaws.com/rach-clip-imovie.mp4
-  // https://mshippoboe.s3.us-west-1.amazonaws.com/compressed_grand_partita.mp4
 ];
 const Video = () => {
   const [selectedVideo, setSelectedVideo] = useState(videoBP[0]);
 
-
   return (
     <>
-      <title>Matthew Shipp | Oboe | Video</title>
+      <Head>
+        <title>Matthew Shipp | Oboe | Video</title>
+      </Head>
       <div className="container" id="video_container">
         <ul className="track__list">
           {videoBP &&
@@ -80,27 +78,26 @@ const Video = () => {
         </ul>
 
         <div className="iframe">
-        {selectedVideo.URL?.includes("youtube") ? (
-              <iframe
-                className="iframe-video"
-                src={selectedVideo.URL}
-                frameBorder="0"
-                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-         
-              ></iframe>
-            ) : (
-              <video
-                // autoPlay
-                controls
-                className="iframe-video"
-                src={selectedVideo.URL}
-                // title="YouTube video player"
-                // frameborder="0"
-                // allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                // allowfullscreen
-              ></video>
-            )}
+          {selectedVideo.URL?.includes("youtube") ? (
+            <iframe
+              className="iframe-video"
+              src={selectedVideo.URL}
+              frameBorder="0"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          ) : (
+            <video
+              // autoPlay
+              controls
+              className="iframe-video"
+              src={selectedVideo.URL}
+              // title="YouTube video player"
+              // frameborder="0"
+              // allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              // allowfullscreen
+            ></video>
+          )}
 
           <div className="selected-video-performers">
             <h4>{selectedVideo.title}</h4>
@@ -120,11 +117,16 @@ const Video = () => {
         </div>
       </div>
       {videoBP &&
-            videoBP.map((tracklist) => {
-              return (
-                <link key={tracklist.URL} rel="preload" as="video" href={tracklist.URL}></link>
-              );
-            })}
+        videoBP.map((tracklist) => {
+          return (
+            <link
+              key={tracklist.URL}
+              rel="preload"
+              as="video"
+              href={tracklist.URL}
+            ></link>
+          );
+        })}
     </>
   );
 };
