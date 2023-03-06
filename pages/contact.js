@@ -1,34 +1,38 @@
 import { AiFillMail, AiOutlineInstagram } from "react-icons/ai";
-import { useRef } from "react";
-
-function copyToClipboard(copyText) {
-  // Get the text field
-  // var copyText = document.getElementById("myInput");
-
-  // Select the text field
-
-  // Copy the text inside the text field
-  navigator.clipboard.writeText(copyText).then(function() {
-    alert(`Copied email to clipboard!`);
-  }, function(err) {
-    console.error('Async: Could not copy text: ', err);
-  });
-
-}
+import { HiOutlineMusicalNote } from "react-icons/hi2";
+import { useEffect, useState } from "react";
 
 export default function Contact() {
-  const emailRef = useRef(null);
+  const [emailClicked, setEmailClicked] = useState(false);
+  useEffect(() => {}, [emailClicked]);
+  function copyToClipboard(copyText) {
+
+    navigator.clipboard.writeText(copyText).then(() => {
+      setEmailClicked(true);
+      setTimeout(() => {
+        setEmailClicked(false)
+      }, 4500)
+    })
+  }
 
   return (
     <div id="contact-page" className="container center">
       <div
-        className="contact-icons"
+        // className="contact-icons"
         onClick={() => copyToClipboard("mshipp08@gmail.com")}
       >
-        <div>
+        <div class="contact-icons">
           <AiFillMail />
+          <div>mshipp08@gmail.com</div>
         </div>
-        <div>mshipp08@gmail.com</div>
+
+        <div className={emailClicked ? "copied-to-clipboard" : "hidden copied-to-clipboard"}>
+          <HiOutlineMusicalNote />
+          {" "}
+          Copied email to clipboard!
+          {" "}
+          <HiOutlineMusicalNote />
+        </div>
       </div>
       <div className="contact-icons">
         <div className="instagram-logo">
