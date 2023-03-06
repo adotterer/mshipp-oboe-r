@@ -24,6 +24,7 @@ const Gallery = () => {
   const modalClose = () => setFeaturedImg(null);
   return (
     <>
+      <title>Matthew Shipp | Oboe | Gallery</title>
       <div className="container">
         <ul id="gallery">
           {galleryImgs.map((image) => {

@@ -6,17 +6,17 @@ export default function Contact() {
   const [emailClicked, setEmailClicked] = useState(false);
   useEffect(() => {}, [emailClicked]);
   function copyToClipboard(copyText) {
-
     navigator.clipboard.writeText(copyText).then(() => {
       setEmailClicked(true);
       setTimeout(() => {
-        setEmailClicked(false)
-      }, 4500)
-    })
+        setEmailClicked(false);
+      }, 4500);
+    });
   }
 
   return (
     <div id="contact-page" className="container center">
+      <title>Matthew Shipp | Oboe | Contact</title>
       <div
         // className="contact-icons"
         onClick={() => copyToClipboard("mshipp08@gmail.com")}
@@ -26,11 +26,12 @@ export default function Contact() {
           <div>mshipp08@gmail.com</div>
         </div>
 
-        <div className={emailClicked ? "copied-to-clipboard" : "hidden copied-to-clipboard"}>
-          <HiOutlineMusicalNote />
-          {" "}
-          Copied email to clipboard!
-          {" "}
+        <div
+          className={
+            emailClicked ? "copied-to-clipboard" : "hidden copied-to-clipboard"
+          }
+        >
+          <HiOutlineMusicalNote /> Copied email to clipboard!{" "}
           <HiOutlineMusicalNote />
         </div>
       </div>

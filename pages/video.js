@@ -63,6 +63,7 @@ const Video = () => {
 
   return (
     <>
+      <title>Matthew Shipp | Oboe | Video</title>
       <div className="container" id="video_container">
         <ul className="track__list">
           {videoBP &&

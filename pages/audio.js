@@ -51,6 +51,7 @@ const Audio = () => {
 
   return (
     <div className="container" id="audio_container">
+      <title>Matthew Shipp | Oboe | Audio</title>
       <AudioPlayer tracklists={audioBP} />
     </div>
   );
