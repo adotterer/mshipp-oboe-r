@@ -82,7 +82,7 @@
     }
     .track__list {
       padding: 0.2em;
-      max-height: 43vh;
+      max-height: 40vh;
       overflow-y: scroll;
       /* border: 2px solid rebeccapurple; */
     }
