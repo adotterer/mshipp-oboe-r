@@ -39,8 +39,9 @@ const videoBP = [
     composer: "Sergei Rachmaninoff",
     id: 3,
     performers: `Philadelphia Orchestra`,
-    title:
-      "Rachmaninov Piano Concerto No. 2 in C minor Op. 18",
+    conductor: "Yannick Nézet-Séguin",
+    soloist: "Haochen Zhang, piano",
+    title: "Rachmaninov Piano Concerto No. 2 in C minor Op. 18",
   },
 
   //https://mshippoboe.s3.us-west-1.amazonaws.com/rach-clip-imovie.mp4
@@ -69,11 +70,16 @@ const Video = () => {
           src={selectedVideo.URL}
           title="YouTube video player"
           frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
         <div className="selected-video-performers">
           <h4>{selectedVideo.title}</h4>
+    
+            {selectedVideo?.conductor && <figcaption>{selectedVideo?.conductor}</figcaption>}
+            {selectedVideo?.soloist && <figcaption>{selectedVideo?.soloist}</figcaption>}
+        
+
           <p>{selectedVideo.performers}</p>
         </div>
       </div>
