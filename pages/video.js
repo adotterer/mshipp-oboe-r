@@ -90,6 +90,7 @@ const Video = () => {
           videoBP.map((tracklist) => {
             return (
               <iframe
+              key={tracklist.title}
               className="iframe-video"
               src={tracklist.URL}
               title="YouTube video player"
