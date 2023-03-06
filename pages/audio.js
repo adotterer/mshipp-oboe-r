@@ -1,4 +1,5 @@
 import AudioPlayer from "../components/AudioPlayer";
+import Head from "next/head";
 
 const Audio = () => {
   const audioBP = [
@@ -44,14 +45,14 @@ const Audio = () => {
       id: 6,
       performers: "Reading Symphony Orchestra",
       title: "Symphony No. 4 in E minor, I. Allegro non troppo ",
-
-    }
+    },
   ];
-
 
   return (
     <div className="container" id="audio_container">
-      <title>Matthew Shipp | Oboe | Audio</title>
+      <Head>
+        <title>Matthew Shipp | Oboe | Audio</title>
+      </Head>
       <AudioPlayer tracklists={audioBP} />
     </div>
   );
