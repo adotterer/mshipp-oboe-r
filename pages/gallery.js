@@ -1,5 +1,6 @@
 import { useState } from "react";
 import FeatureModal from "../components/FeatureModal";
+import Head from "next/head";
 
 const galleryImgs = [
   {
@@ -24,7 +25,9 @@ const Gallery = () => {
   const modalClose = () => setFeaturedImg(null);
   return (
     <>
-      <title>Matthew Shipp | Oboe | Gallery</title>
+      <Head>
+        <title>Matthew Shipp | Oboe | Gallery</title>
+      </Head>
       <div className="container">
         <ul id="gallery">
           {galleryImgs.map((image) => {
