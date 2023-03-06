@@ -20,11 +20,6 @@
     background-size: cover;
 }
 
-#container {
-    display: inline-block;
-    position: relative;
-    width: 33%;
-  }
   
   #dummy {
     margin-top: 100%;
@@ -61,6 +56,9 @@
   }
   
   @media screen and (max-width: 600px) {
+    #gallery {
+      grid-template-columns: 1fr 1fr;
+    }
     #upload__image__modal input {
       padding: 0.5em;
       font-size: 0.9em;
