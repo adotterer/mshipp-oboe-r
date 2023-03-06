@@ -4,27 +4,22 @@ const NavBar = () => {
       <nav>
         <ul>
           <li>
-            <Link href="/" exact={true}>
+            <Link href="/" exact>
               Bio
             </Link>
           </li>
           <li>
-            <Link href="/contact" exact={true}>
+            <Link href="/contact" exact>
               Contact
             </Link>
           </li>
-          {/* <li>
-            <Link href="/gallery" exact={true}>
-              Gallery
-            </Link>
-          </li> */}
           <li>
-            <Link href="/audio" exact={true}>
+            <Link href="/audio" exact>
               Audio
             </Link>
           </li>
           <li>
-            <Link href="/video" exact={true}>
+            <Link href="/video" exact>
               Video
             </Link>
           </li>

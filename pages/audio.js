@@ -6,7 +6,7 @@ const Audio = () => {
       URL: "https://mshippoboe.s3.us-west-1.amazonaws.com/audio_5_Coleman.wav",
       composer: "Valerie Coleman",
       id: 1,
-      performers: "Philadelphia Orchestra",
+      performers: "The Philadelphia Orchestra",
       title: "UMOJA Anthem of Unity for orchestra (2nd oboe solo)",
     },
     {
@@ -24,7 +24,7 @@ const Audio = () => {
       title: "Symphony No. 5, II. Andante con moto",
     },
     {
-      URL: "https://mshippoboe.s3.us-west-1.amazonaws.com/audio_4_Hindemith.wav",
+      URL: "https://mshippoboe.s3.us-west-1.amazonaws.com/audio_4_Hindemith-NORMALIzed.wav",
       composer: "Paul Hindemith",
       id: 4,
       performers: "Temple Symphony Orchestra",
@@ -39,7 +39,7 @@ const Audio = () => {
     },
 
     {
-      URL: "https://mshippoboe.s3.us-west-1.amazonaws.com/brahms4-reading-clip-fadesss.wav",
+      URL: "https://mshippoboe.s3.us-west-1.amazonaws.com/brahms4-reading-clip-fades_normalized.wav",
       composer: "Johannes Brahms",
       id: 6,
       performers: "Reading Symphony Orchestra",
