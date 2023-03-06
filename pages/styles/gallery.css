@@ -39,11 +39,6 @@
     right: 0;
     /* background-color: silvershow me! */
   }
-
-
-
-
-  
   #feature__image__modal {
     top: 0;
     left: 0;
@@ -72,5 +67,9 @@
     }
     #upload__image__modal {
       top: 15vh;
+    }
+    #feature__image__modal img {
+      width: 47vw;
+      height: auto;
     }
   }
