@@ -50,6 +50,7 @@ const Video = () => {
   const [selectedVideo, setSelectedVideo] = useState(videoBP[0]);
 
   return (
+    <>
     <div className="container" id="video_container">
       <ul className="track__list">
         {videoBP &&
@@ -84,6 +85,22 @@ const Video = () => {
         </div>
       </div>
     </div>
+    <div id="preload-videos">
+    {videoBP &&
+          videoBP.map((tracklist) => {
+            return (
+              <iframe
+              className="iframe-video"
+              src={tracklist.URL}
+              title="YouTube video player"
+              frameborder="0"
+              // allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              // allowfullscreen
+            ></iframe>
+            );
+          })}
+    </div>
+    </>
   );
 };
 
