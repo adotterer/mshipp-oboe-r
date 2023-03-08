@@ -20,7 +20,7 @@ export default function Bio() {
         <p>
           As a chamber musician, Matthew performed the Beethoven Wind Octet Op.
           103 with members of The Philadelphia Orchestra. Additionally, they were a featured soloist in
-          Mozart’s aria “Deh vieni, non tardar” with the Temple Chamber Winds at
+          Mozart's aria “Deh vieni, non tardar” with the Temple Chamber Winds at
           the World Association for Symphonic Bands and Ensembles (WASBE)
           International Conference in San Jose.
         </p>
@@ -31,7 +31,7 @@ export default function Bio() {
           Iowa, and studied with renowned
           pedagogue Andrew Parker at the University of Iowa. Matthew has spent
           summers participating in music festivals such as the Round Top
-          Festival Institute and the New York Symphonic Ensemble’s Tour of
+          Festival Institute and the New York Symphonic Ensemble's Tour of
           Japan.
         </p>
       </article>
