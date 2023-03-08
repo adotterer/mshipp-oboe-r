@@ -5,8 +5,8 @@ export default function Bio() {
       <article id="article__bio">
         <h2>Oboe & English Horn</h2>
         <p>
-          Matthew Shipp is one of the East Coast's most sought-after freelance oboists.
-          They regularly perform with some of the region's most distinguished ensembles, including 
+          Matthew Shipp is one of the East Coast&#39;s most sought-after freelance oboists.
+          They regularly perform with some of the region&#39;s most distinguished ensembles, including 
            The Philadelphia Orchestra, Reading Symphony Orchestra, Pennsylvania Ballet, Chamber
           Orchestra of Philadelphia, Princeton Symphony, Brooklyn
           Chamber Orchestra, and Symphony in C. 
@@ -20,7 +20,7 @@ export default function Bio() {
         <p>
           As a chamber musician, Matthew performed the Beethoven Wind Octet Op.
           103 with members of The Philadelphia Orchestra. Additionally, they were a featured soloist in
-          Mozart's aria “Deh vieni, non tardar” with the Temple Chamber Winds at
+          Mozart&#39;s aria “Deh vieni, non tardar” with the Temple Chamber Winds at
           the World Association for Symphonic Bands and Ensembles (WASBE)
           International Conference in San Jose.
         </p>
@@ -31,7 +31,7 @@ export default function Bio() {
           Iowa, and studied with renowned
           pedagogue Andrew Parker at the University of Iowa. Matthew has spent
           summers participating in music festivals such as the Round Top
-          Festival Institute and the New York Symphonic Ensemble's Tour of
+          Festival Institute and the New York Symphonic Ensemble&#39;s Tour of
           Japan.
         </p>
       </article>
