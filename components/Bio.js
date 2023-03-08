@@ -1,4 +1,3 @@
-
 export default function Bio() {
   return (
     <div id="div__bio_container" className="container">
