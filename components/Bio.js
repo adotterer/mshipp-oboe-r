@@ -5,30 +5,31 @@ export default function Bio() {
       <article id="article__bio">
         <h2>Oboe & English Horn</h2>
         <p>
-          Matthew Shipp lives in Philadelphia and works as a freelance oboist in
-          Philadelphia and New York City. Mr. Shipp has performed with The
-          Philadelphia Orchestra, Pennsylvania Ballet Orchestra, Chamber
-          Orchestra of Philadelphia, Reading Symphony, Princeton Symphony, Brooklyn
-          Chamber Orchestra, and Symphony in C. As a guest musician, Mr. Shipp has
-          performed with The Philadelphia Orchestra both domestically and
-          internationally in Taiwan, Japan, and South Korea. Recent engagements
+          Matthew Shipp is one of the East Coast's most sought-after freelance oboists.
+          They regularly perform with some of the region's most distinguished ensembles, including 
+           The Philadelphia Orchestra, Reading Symphony Orchestra, Pennsylvania Ballet, Chamber
+          Orchestra of Philadelphia, Princeton Symphony, Brooklyn
+          Chamber Orchestra, and Symphony in C. 
+          
+          As a guest musician, Matthew has
+          performed with The Philadelphia Orchestra domestically and
+          internationally in Taiwan, Japan, and South Korea. Recent engagements with The Philadelphia Orchestra
           include performances at Carnegie Hall, Suntory Hall, NHK Hall, Seoul
           Arts Center, and the National Performing Arts Center of Taiwan.
         </p>
         <p>
           As a chamber musician, Matthew performed the Beethoven Wind Octet Op.
-          103 with members of The Philadelphia Orchestra as a co-presenter at
-          the CBDNA 2020 Conference. Additionally, he was a featured soloist in
+          103 with members of The Philadelphia Orchestra. Additionally, they were a featured soloist in
           Mozart’s aria “Deh vieni, non tardar” with the Temple Chamber Winds at
           the World Association for Symphonic Bands and Ensembles (WASBE)
           International Conference in San Jose.
         </p>
         <p>
-          Mr. Shipp is a graduate of Temple University, where he received the
+          Matthew is a graduate of Temple University, where they received the
           Master of Music degree and studied with Peter Smith, Associate
           Principal Oboe of The Philadelphia Orchestra. Matthew is a native of
-          Iowa, and prior to moving to Philadelphia, he studied with renowned
-          pedagogue Andrew Parker at the University of Iowa. He has spent
+          Iowa, and studied with renowned
+          pedagogue Andrew Parker at the University of Iowa. Matthew has spent
           summers participating in music festivals such as the Round Top
           Festival Institute and the New York Symphonic Ensemble’s Tour of
           Japan.
