@@ -28,6 +28,11 @@ const NavBar = () => {
               Gallery
             </Link>
           </li>
+          <li>
+            <Link href="https://reeds.adotterer.com/" exact>
+              Reeds & More
+            </Link>
+          </li>
         </ul>
       </nav>
     );
