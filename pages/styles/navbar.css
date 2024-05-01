@@ -4,6 +4,7 @@ nav {
 
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 1.5rem;
   align-items: center;
