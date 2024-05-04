@@ -4,7 +4,6 @@ export default function Bio() {
     <div id="div__bio_container" className="container">
       <article id="article__bio">
         <h2>Oboe & English Horn</h2>
-        &#39;
         <p>
           Matthew Shipp enjoys a rich and varied career as a sought-after
           performer and teacher. Matthew performs frequently as a guest musician
