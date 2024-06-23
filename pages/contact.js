@@ -20,24 +20,8 @@ export default function Contact() {
       <Head>
         <title>Matthew Shipp | Oboe | Contact</title>
       </Head>
-      <div
-        // className="contact-icons"
-        onClick={() => copyToClipboard("mshipp08@gmail.com")}
-      >
-        <div class="contact-icons">
-          <AiFillMail />
-          <div>mshipp08@gmail.com</div>
-        </div>
-
-        <div
-          className={
-            emailClicked ? "copied-to-clipboard" : "hidden copied-to-clipboard"
-          }
-        >
-          <HiOutlineMusicalNote /> Copied email to clipboard!{" "}
-          <HiOutlineMusicalNote />
-        </div>
-      </div>
+      <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+      <div class="elfsight-app-405bed0a-0faf-49f5-8725-37bf0ff3a5f9" data-elfsight-app-lazy></div>
       <div className="contact-icons">
         <div className="instagram-logo">
           <a href="https://www.instagram.com/matthewshippoboe/">
