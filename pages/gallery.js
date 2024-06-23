@@ -4,6 +4,12 @@ import Head from "next/head";
 
 const galleryImgs = [
   {
+    src: "https://mshippoboe.s3.us-west-1.amazonaws.com/philorch3.jpeg",
+  },
+  {
+    src: "https://mshippoboe.s3.us-west-1.amazonaws.com/cg.jpeg",
+  },
+  {
     src: "https://mshippoboe.s3.us-west-1.amazonaws.com/image_5_phil_orch_section_1.jpg",
   },
   {
@@ -18,7 +24,8 @@ const galleryImgs = [
   {
     src: "https://mshippoboe.s3.us-west-1.amazonaws.com/beethoven_octet_temple.jpg",
   },
-  //
+
+  // 
 ];
 const Gallery = () => {
   const [featuredImg, setFeaturedImg] = useState(null);
