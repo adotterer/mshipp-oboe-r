@@ -9,11 +9,6 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/contact" exact>
-              Contact
-            </Link>
-          </li>
-          <li>
             <Link href="/audio" exact>
               Audio
             </Link>
@@ -30,7 +25,12 @@ const NavBar = () => {
           </li>
           <li>
             <Link href="https://reeds.adotterer.com/" exact>
-              Reeds & More
+              Oboe Reeds
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact" exact>
+              Contact
             </Link>
           </li>
         </ul>
