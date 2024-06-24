@@ -25,7 +25,7 @@ const NavBar = () => {
           </li>
           <li>
             <Link href="https://reeds.adotterer.com/" exact>
-              Oboe Reeds
+              Reeds
             </Link>
           </li>
           <li>
