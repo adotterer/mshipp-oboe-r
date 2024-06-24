@@ -2,6 +2,7 @@ import { AiFillMail, AiOutlineInstagram } from "react-icons/ai";
 import { HiOutlineMusicalNote } from "react-icons/hi2";
 import { useEffect, useState } from "react";
 import Head from 'next/head';
+import Script from 'next/script'
 
 export default function Contact() {
   const [emailClicked, setEmailClicked] = useState(false);
@@ -20,7 +21,7 @@ export default function Contact() {
       <Head>
         <title>Matthew Shipp | Oboe | Contact</title>
       </Head>
-      <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+      <Script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></Script>
       <div class="elfsight-app-405bed0a-0faf-49f5-8725-37bf0ff3a5f9" data-elfsight-app-lazy></div>
       <div className="contact-icons">
         <div className="instagram-logo">
