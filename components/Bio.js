@@ -8,9 +8,9 @@ export default function Bio() {
           Matthew Shipp enjoys a rich and varied career as a sought-after
           performer and teacher. Matthew performs frequently as a guest musician
           with The Philadelphia Orchestra, among other distinguished ensembles
-          in the region, including the Reading Symphony Orchestra, Chamber
-          Orchestra of Philadelphia, Princeton Symphony, Black Pearl Chamber
-          Orchestra, Bay-Atlantic Symphony, and Symphony in C.
+          in the region, including the National Symphony Orchestra, Reading
+          Symphony Orchestra, Chamber Orchestra of Philadelphia, Princeton
+          Symphony, Black Pearl Chamber Orchestra, and Symphony in C.
         </p>
         <p>
           As a guest musician at The Philadelphia Orchestra, Matthew has
@@ -21,11 +21,11 @@ export default function Bio() {
         </p>
         Mx. Shipp has been fortunate to collaborate with some of the world&#39;s
         leading conductors, including Yannick Nézet-Séguin, Esa-Pekka Salonen,
-        Paavo Järvi, Jeri Lynn Johnson, Rafael Payare, William Eddins, and
-        Christoph Eschenbach. Furthermore, Matthew has performed alongside
-        several of the world&#39;s most illustrious soloists, including Joshua
-        Bell, Hilary Hahn, Seong-Jin Cho, Hélène Grimaud, Sir András Schiff,
-        Haochen Zhang, and Inon Barnatan.
+        Paavo Järvi, Gianandrea Noseda, Jeri Lynn Johnson, Rafael Payare,
+        William Eddins, and Christoph Eschenbach. Furthermore, Matthew has
+        performed alongside several of the world&#39;s most illustrious
+        soloists, including Joshua Bell, Hilary Hahn, Seong-Jin Cho, Hélène
+        Grimaud, Sir András Schiff, Haochen Zhang, and Inon Barnatan.
         <p>
           As a chamber musician, Matthew performed the Beethoven Wind Octet
           Op.103 with members of The Philadelphia Orchestra as a co-presenter at
